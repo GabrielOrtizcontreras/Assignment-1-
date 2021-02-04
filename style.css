@@ -44,16 +44,12 @@ table, th, td {
   font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
   border-collapse: collapse;
   width: 100%;
-
 }
 
 #planets td, #planets th {
   border: 1px solid grey;
   padding: 8px;
 }
-
-
-
 
 
 #planets th {
