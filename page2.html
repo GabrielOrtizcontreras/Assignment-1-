@@ -2,45 +2,82 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignment 1 Home </title>
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
-  <body>
-    <header><img src ="images/Space.jpg"</header>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a> </li>
-        <li><a href="page1.html">Page 1</a> </li>
-        <li><a href="page2.html">Page 2</a> </li>
-        <li><a href="https://cs.columbusstate.edu/">CSU</a> </li>
-      </ul>
-    </nav>
-    <main> <p> <h1> Assignment 1 : Page 2 </h1> </p> </main>
-  <table id="planets">
-  <tr>
-    <th>  Planet </th>
-    <th>  Next to </th>
-  </tr>
-  <tr>
-    <th> <li> Saturn </li></th>
-    <th> 1. Pluto    
-    </th>
-  </tr>
-    <th> <li> Jupiter </li> </th>
-    <th>  2. Saturn </th>
-  </tr>
-  <tr>
-    <th> <li> Mars </li> </th>
-    <th> 3. Earth </th>
-  </tr>
-  <tr>
-    <th> <li> Earth </li> </th>
-    <th> 4. Mars </th>
-  </tr>
-  </table>
 
-  <footer><p> <em> Space World | Gabriel Ortizcontreras | February 2021 | 8999 Way Street, Orlando, FL | 706-507-8800 | </em> </p> </footer>
+  <body>
+    <div class = "header"><img src ="images/Space.jpg"></div>
+    
+    <div class="navbar">
+        <a href="index.html">Home</a> 
+        <a href="page1.html">Page 1</a> 
+        <a href="page2.html">Page 2</a> 
+        <a href="page3.html">Page 3</a> 
+        <a href="https://cs.columbusstate.edu/">CSU</a>
+    </div>
+  <div class="row">
+  <div class= "main"> <p> <h1> Assignment 1 : Page 2 </h1> </p> 
+
+    <table id="planets">
+    <tr>
+      <th>  Planet </th>
+      <th>  Next to </th>
+      </tr>
+    <tr>
+      <th> <li> Saturn </li></th>
+      <th> 1. Pluto    
+      </th>
+    </tr>
+      <th> <li> Jupiter </li> </th>
+      <th>  2. Saturn </th>
+    </tr>
+    <tr>
+      <th> <li> Mars </li> </th>
+      <th> 3. Earth </th>
+     </tr>
+    <tr>
+      <th> <li> Earth </li> </th>
+      <th> 4. Mars </th>
+      </tr>
+    </table> 
+  </div>
+
+  <div class = "side">
+    <h2 style="text-align:center;"> Instructions </h2>
+    <p style="text-align:center;"><small> In repl.it, click on My Repls. Add a folder called Assignments and click it. The site will offer to create another HTML repl inside that Assignments folder for you. Accept. This is your Assignments repl.
+
+    Add an images folder. You can drag & drop images here. Add a banner image.
+
+    index.html
+
+    Use semantic tags to divide the page into these logical sections:
+    header, nav, main, and footer
+
+    Add a banner-type image to the header semantic tag. Note that you have to include the images folder in the path.
+
+    In the nav sematic tag, define a navigation for the Assignments 1 site including Home, Page 1 and Page 2, and CSU’s main page.
+
+    Add information to the footer: contact info, name, etc. You can use fictional business info.
+
+    This index page is now your site template. Copy it to two additional files so they are all the same so far. Create page1.html and page2.html.
+
+    In the main, welcome the user to your site using h1 - h6, p tags.
+
+    Scroll down to the end to get instructions to do your first Github commit now.
+    
+     </small></p>
+
+    </div>
+  </div>
+
+
+
+
+  <div class="footer"><em> Space World | Gabriel Ortizcontreras | February 2021 | 8999 Way Street, Orlando, FL | Last Updated | <span id="demo"></span>.</small></em> <script>
+    document.getElementById("demo").innerHTML = document.lastModified;
+    </script>  </div>
 
   
     <script src="script.js"></script>

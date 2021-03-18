@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Assignment 2 </title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+	<div class="header">
+		<h3 style="text-align:center;">CPSC 2125 Assignment 2</h3>
+		</div>
+    
+	  <div class="navbar">
+		    <a href="index.html">Home</a> 
+        <a href="page1.html">Page 1</a> 
+        <a href="page2.html">Page 2</a> 
+        <a href="page3.html">Page 3</a> 
+        <a href="https://cs.columbusstate.edu/">CSU</a>
+		</div>
+  <div class="row">
+	<div class="main">
+		<h4 style="text-align:center;"> Form </h4> 
+
+		<h3 style="text-align:center;">Required information is marked with an asterisk (*) </h3> 
+
+	    <form name="myForm" action="https://webdevbasics.net/scripts/yoga.php" onsubmit="return validateForm()" method="post">
+      
+      <p><strong> * What is your First and Last Name? </strong> </p> 
+		  <label for="fname">* First name:</label><br> 
+      <input type="text" id="fname" name="fname" placeholder="John" size="50" required><br>
+      <label for="lname">* Last name:</label><br>
+      <input type="text" id="lname" name="lname" placeholder="Doe" size="50" required>
+      
+      <p><strong> * What is your Email Address? </strong></p>
+      <label for="email"> * Email Address </label>
+      <br>
+      <input type="email" id="email" name="email" placeholder="johndoe@blah.com" required>
+      
+      <p><strong> * What is your Phone Number? </strong></p>
+      <label for="phone">Enter a phone number:</label>
+      <input type="tel" id="phone" name="phone"
+      placeholder="123-456-6789"
+      pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+      
+      <p><strong> * Select one of the following: </strong> </p>
+
+      <select id="State" required>
+        
+      <option>AL</option>
+      <option>FL</option>
+      <option>GA</option>
+      <option>NY</option>
+      <option>SC</option>
+
+      </select>
+
+      <p><strong> * Enter a Username: </strong></p> <br>
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" required>
+      <p><strong> * Enter a password: </strong></p>
+      <label for="pwd">Password:</label><br>
+      <input type="password" id="pwd" name="pwd" required>
+    
+     
+      <p><strong> If you have any further questions or anything to add enter them below : </strong> </p> 
+      <br>
+      <input type="text" id="Comments" size="100" placeholder="Comments no longer than 100 characters">
+      <br>
+
+    <input type="submit" value="Submit">
+    <input type="reset">
+
+     </form>
+    </div>
+    <div class="side">
+      <h3 style="text-align:center;"> Instructions </h3>
+      <p> Please fill out our form to the left. We will contact you shortly after with any further instruction or further information. We are processing applications as quickly as we can. Thank you and have a great day!
+        </p>
+    </div>
+ 
+
+
+  <div class="footer">
+    <em> Space World | Gabriel Ortizcontreras | February 2021 | 8999 Way Street, Orlando, FL | Last Updated | <span id="demo"></span>.</small></em> <script>
+    document.getElementById("demo").innerHTML = document.lastModified;
+    </script> 
+  </div>
+  
+    <script src="script.js"></script>
+  </body>
+  
+</html>
